@@ -3,6 +3,8 @@
 ## Description
 A video is at the root of the project a `video` folder is served to an HTML page, via an` express` server 
 
+Typescript ts-node-dev are being used for development.
+
 ## Get started
 
 1 - Install the necessary dependencies
