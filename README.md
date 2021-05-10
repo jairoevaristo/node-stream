@@ -26,7 +26,7 @@ or
 or 
 
 ```bash
-  yarn install
+  yarn dev
 ```
 
 ## Using
