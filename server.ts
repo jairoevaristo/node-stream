@@ -4,12 +4,18 @@ import path from 'path';
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, './public')));
+
+app.get('/', (req, res) => {
+  res.render('index.html');
+})
+
 app.get('/video', (req, res) => {
   const { range } = req.headers;
   const videoPath = path.resolve(__dirname, './video', 'video.mp4');
   const videoSize = fs.statSync(videoPath).size;
 
-  const chuckSize = 1 * 1e+6;
+  const chuckSize = 10000;
   const start = Number(range?.replace(/\D/g, ''));
   const end = Math.min(start + chuckSize, videoSize - 1);
 

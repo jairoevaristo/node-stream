@@ -1,9 +1,8 @@
 # Streams in NodeJS
 
 ## Description
-A video is at the root of the project a `video` folder is served to an HTML page, via an `express` server 
 
-Typescript ts-node-dev are being used for development.
+A video is at the root of the project a `video` folder is served to an HTML page, via an `express` server. Typescript ts-node-dev are being used for development.
 
 ## Get started
 
@@ -17,7 +16,7 @@ or
 ```bash
   yarn install
 ```
-
+ 
 2 - Run the command to start the server
 
 ```bash
@@ -30,4 +29,5 @@ or
   yarn install
 ```
 
-After installing the dependencies and starting the server, it will be running in `localhost: 3333`, and the video feature will be available in one route GET,`/video`
+## Using
+After installing the dependencies and starting the server, it will be running in `http://localhost:3333/`
